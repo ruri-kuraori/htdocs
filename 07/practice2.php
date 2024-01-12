@@ -6,7 +6,7 @@ $number = 1;
 $sum = 0;
 
 //$numberが100以下時まで繰り返し
-while($number < 100){
+while($number <= 100){
 
 //$numberを2で割ってあまりが0ではないならば
 if($number % 2 !== 0){
