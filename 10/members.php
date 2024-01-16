@@ -73,19 +73,16 @@ $members = [
             <th>住所</th>
           </tr>
           <?php 
-              foreach($members as $member){
-                echo '<tr>
-                <td>' . $member['id'].'</td>
-                <td>'  . $member['family_name'] .'</td>
-                <td>'  . $member['first_name'] .'</td>
-                <td>'  . $member['age'] .'</td>
-                <td>'  . $member['gender'] .'</td>
-                <td>'  . $member['address'] .'</td>
-                </tr>';
-              }?>
-          
-        </table>
-        
-        
+          foreach($members as $member => $numbers){ ?>
+          <tr>
+            <?php
+            foreach($numbers as $number => $value){
+            ?>
+            <td><?php echo $value ?></td>
+            <?php }?>
+          </tr>
+          <?php }?>
+          </table>
+
     </body>
 </html>
